@@ -52,7 +52,7 @@ export const Auth: FC = () => {
         <div className="my-6 flex items-center justify-center text-sm">
           <span
             onClick={() => setIsLogin(!isLogin)}
-            className="cursor-pointer font-medium hover:text-indigo-500"
+            className="cursor-pointer font-medium hover:text-indigo-700"
           >
             Change mode?
           </span>
