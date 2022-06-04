@@ -8,7 +8,7 @@ export const useSubscribeNotices = () => {
   const queryClient = useQueryClient()
   useEffect(() => {
     const subsc = supabase
-      .from('notices')
+      .from('notices') // table level
       .on('INSERT', (payload: SupabaseRealtimePayload<Notice>) => {
         let previousNotices = queryClient.getQueryData<Notice[]>(['notices'])
         if (!previousNotices) {
