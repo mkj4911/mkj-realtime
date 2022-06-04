@@ -15,7 +15,7 @@ export type EditedPost = {
 export type Comment = {
   id: string
   created_at: string
-  user_id: string
+  user_id: string | undefined
   post_id: string
   comment: string
 }

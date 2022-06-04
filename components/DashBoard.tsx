@@ -8,6 +8,7 @@ import { Spinner } from './Spinner'
 import { UserProfile } from './UserProfile'
 import { Notification } from './Notification'
 import { Feed } from './Feed'
+import '../styles/dashboard.module.css'
 
 export const DashBoard: FC = () => {
   const quetyClient = useQueryClient()
