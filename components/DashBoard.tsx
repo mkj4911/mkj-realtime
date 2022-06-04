@@ -5,7 +5,7 @@ import { LogoutIcon, ExclamationCircleIcon } from '@heroicons/react/solid'
 import { supabase } from '../utils/supabase'
 import useStore from '../store'
 import { Spinner } from './Spinner'
-// import { UserProfile } from './UserProfile'
+import { Profile } from './Profile'
 import { Notification } from './Notification'
 import { Feed } from './Feed'
 
@@ -36,7 +36,9 @@ export const DashBoard: FC = () => {
               <ExclamationCircleIcon className="my-5 h-10 w-10 text-pink-500" />
             }
           >
-            <Suspense fallback={<Spinner />}>{/* <UserProfile /> */}</Suspense>
+            <Suspense fallback={<Spinner />}>
+              <Profile />
+            </Suspense>
           </ErrorBoundary>
         </div>
 
