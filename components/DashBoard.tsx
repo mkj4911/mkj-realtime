@@ -5,8 +5,8 @@ import { LogoutIcon, ExclamationCircleIcon } from '@heroicons/react/solid'
 import { supabase } from '../utils/supabase'
 import useStore from '../store'
 import { Spinner } from './Spinner'
-import { Notification } from './Notification'
 import { UserProfile } from './UserProfile'
+import { Notification } from './Notification'
 import { Feed } from './Feed'
 
 export const DashBoard: FC = () => {
